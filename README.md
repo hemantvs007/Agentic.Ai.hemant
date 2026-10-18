@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Autonomous Data Analysis Agent
 
 An **Autonomous Data Analyst Agent** is an Agentic AI application that automatically analyzes structured datasets such as CSV and Excel files, performs statistical analysis, generates visualizations, identifies patterns and trends, and provides insights in natural language.
@@ -646,3 +647,6 @@ The **Autonomous Data Analyst Agent** combines traditional data-analysis techniq
 Instead of simply providing an AI chatbot, the system gives the AI agent access to real data-analysis tools. The agent can determine what actions are required, execute those actions, interpret the results, and communicate the findings to the user.
 
 The project demonstrates how **LLMs, agents, tools, data processing, and visualization** can work together to automate a real-world data-analysis workflow.
+=======
+# Agentic.Ai.hemant
+>>>>>>> 827f968c1818d2741af706ded77a88e6ec773bc4
