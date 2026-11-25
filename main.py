@@ -248,7 +248,12 @@ with st.sidebar:
     st.caption("Autonomous Data Analyst Control Panel")
 
     # API Key Input
-    default_key = os.environ.get("GEMINI_API_KEY", "")
+    default_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or ""
+    if not default_key:
+        try:
+            default_key = st.secrets.get("GEMINI_API_KEY") or st.secrets.get("GOOGLE_API_KEY") or ""
+        except Exception:
+            default_key = ""
     api_key_input = st.text_input(
         "Gemini API Key",
         value=default_key,
